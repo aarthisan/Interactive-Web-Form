@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Form</title>
+    <link rel="stylesheet" href="cascade.css"> <!-- Links to an external CSS file -->
+</head>
+<body>
+    <form id="interactiveForm"> <!-- Creates a form with the id "interactiveForm" -->
+        <div>
+            <label for="firstName">First Name:</label> <!-- Label for First Name input -->
+            <input type="text" id="firstName" name="firstName"> <!-- Input field for First Name -->
+            <div id="firstNameError" class="error"></div> <!-- Error message container for First Name -->
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label> <!-- Label for Last Name input -->
+            <input type="text" id="lastName" name="lastName"> <!-- Input field for Last Name -->
+            <div id="lastNameError" class="error"></div> <!-- Error message container for Last Name -->
+        </div>
+        <div>
+            <label for="email">Email:</label> <!-- Label for Email input -->
+            <input type="email" id="email" name="email"> <!-- Input field for Email -->
+            <div id="emailError" class="error"></div> <!-- Error message container for Email -->
+        </div>
+        <div>
+            <label for="package">Package:</label> <!-- Label for Package select -->
+            <select id="package" name="package"> <!-- Select dropdown from Package -->
+                <option value="">Select a package</option> <!-- Default option -->
+                <option value="bronze">Bronze</option> <!-- Package option -->
+                <option value="silver">Silver</option> <!-- Package option -->
+                <option value="gold">Gold</option> <!-- Package option -->
+                <option value="platinum">Platinum</option> <!-- Package option -->
+            </select>
+            <div id="packageError" class="error"></div> <!-- Error message container for Package -->
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe"> <!-- Checkbox for subscription -->
+                Subscribe to our newsletter
+            </label>
+            <div id="subscribeError" class="error"></div> <!-- Error message container for Subscription -->
+        </div>
+        <div>
+            <button type="button" id="submitBtn">Submit</button> <!-- Button to submit the form -->
+        </div>
+    </form>
+    <div id="summary" style="display: none;">
+    </div>
+
+    <script src="code.js"></script> <!-- Links to an external JS file -->
+</body>
+</html>
